@@ -9,15 +9,17 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
-
 body {
+  color: #f288cf;
   font-family: monospace;
+  transition: 0.3s linear;
+  background-color: rgb(254, 156, 203);
 }
-#todo-container {
+#todo-container{
+    background-color: rgb(250, 200, 225);
     padding: 20px;
     border-radius: 50px;
     border: 4px dashed rgb(246, 111, 179); 
-    transition: background-color 0.3s linear, color 0.3s linear;
 }
 .carton {
     width: 100vw;
@@ -76,8 +78,8 @@ body {
   border-color: #ba4393;
 }
 .btn-outline-primary{
-    color: #ab3785;
-    border: 1px solid #ab3785;;
+    color: #f288cf;
+    border: 1px solid #f288cf;
 }
 .btn-outline-primary:hover{
     background-color: #f288cf;
@@ -98,20 +100,22 @@ body {
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
-/* ------------------------mode clair -----------------------*/
-body.light-body {
-  background-color: rgb(254, 156, 203);
-  color: #222;
-  transition: background-color 0.3s linear, color 0.3s linear;
-}
+/* mode clair -----------------------*/
 .light-container {
-  background-color: rgb(254, 156, 203);
-  color: black;
+  background-color: rgb(250, 200, 225);
   padding: 20px;
   border-radius: 50px;
   border: 4px dashed rgb(246, 111, 179);
-  transition: background-color 0.3s linear, color 0.3s linear;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
 }
-#title{
-    color: white;
+
+/* mode sombre */
+.dark-container {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 50px;
+  border: 4px dashed #888;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
 }
