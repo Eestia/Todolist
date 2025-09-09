@@ -9,10 +9,109 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
 body {
-  transition: 0.3s linear;
+  font-family: monospace;
+}
+#todo-container {
+    padding: 20px;
+    border-radius: 50px;
+    border: 4px dashed rgb(246, 111, 179); 
+    transition: background-color 0.3s linear, color 0.3s linear;
 }
 .carton {
-    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(254, 156, 203);
     transition: 0.3s linear;
+}
+.btn-warning{
+    color: white;
+    background-color: rgb(160, 225, 231);         
+    border-color: rgb(160, 225, 231);
+}
+.btn-warning:hover {
+  background-color:  rgb(69, 138, 144);
+  border-color: rgb(69, 138, 144);
+}
+.btn-primary {
+  background-color: rgb(160, 225, 231); 
+  border-color: rgb(160, 225, 231);
+}
+
+.btn-primary:hover {
+  background-color:  rgb(69, 138, 144);
+  border-color: rgb(69, 138, 144);
+}
+
+/* Changer la couleur du bouton Terminé */
+.btn-success {
+  background-color: rgb(143, 226, 190);
+  border-color:  rgb(143, 226, 190);
+}
+
+.btn-success:hover {
+  background-color:rgb(72, 171, 128);
+  border-color:rgb(72, 171, 128);
+}
+
+.btn-secondary{
+    background-color: #f288cf;
+    border-color: #f288cf;
+}
+.btn-secondary:hover{
+  background-color: #ba4393;
+  border-color: #ba4393;
+}
+.btn-danger {
+  background-color: #f288cf;
+  border-color: #f288cf;
+}
+
+.btn-danger:hover {
+  background-color: #ba4393;
+  border-color: #ba4393;
+}
+.btn-outline-primary{
+    color: #ab3785;
+    border: 1px solid #ab3785;;
+}
+.btn-outline-primary:hover{
+    background-color: #f288cf;
+    color: white;
+    border: 1px solid #f288cf;
+}
+/* Liste des tâches */
+.list-group-item {
+  border-radius: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Input */
+.input-group .form-control {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.input-group .btn {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* ------------------------mode clair -----------------------*/
+body.light-body {
+  background-color: rgb(254, 156, 203);
+  color: #222;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+.light-container {
+  background-color: rgb(254, 156, 203);
+  color: black;
+  padding: 20px;
+  border-radius: 50px;
+  border: 4px dashed rgb(246, 111, 179);
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+#title{
+    color: white;
 }
