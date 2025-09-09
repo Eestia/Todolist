@@ -59,7 +59,7 @@ export default function Index({ tasks: initialTasks, filter }) {
 
   return (
     <div className={`container py-5 carton`}>
-    <div id='todo-container'>
+    <div id='todo-container' className={darkMode ? 'dark' : ''}>
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2 id='title'>❤︎ Todo List</h2>
         <button className="btn btn-secondary" onClick={() => setDarkMode(!darkMode)}>

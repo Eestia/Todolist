@@ -20,6 +20,10 @@ body {
     padding: 20px;
     border-radius: 50px;
     border: 4px dashed rgb(246, 111, 179); 
+    transition: background-color 0.3s linear, color 0.3s linear;
+}
+#todo-container.dark {
+    background-color: rgb(111, 33, 72);
 }
 .carton {
     width: 100vw;
