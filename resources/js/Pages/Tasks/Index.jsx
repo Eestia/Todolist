@@ -4,6 +4,7 @@ import { Link } from '@inertiajs/react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { route } from 'ziggy-js';
 import '../../../css/app.css';
+import bgimg from "../../../../public/storage/doodle.png"
 
 
 export default function Index({ tasks: initialTasks, filter }) {
@@ -59,6 +60,7 @@ export default function Index({ tasks: initialTasks, filter }) {
 
   return (
     <div className={`container py-5 carton`}>
+    <img className={`${darkMode ? "bgimg dark" : "bgimg"}`} src={bgimg} alt="" />
     <div id='todo-container' className={darkMode ? 'dark' : ''}>
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2 id='title'>❤︎ Todo List</h2>

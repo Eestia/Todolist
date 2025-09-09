@@ -9,6 +9,7 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
 body {
   color: #f288cf;
   font-family: monospace;
@@ -21,6 +22,8 @@ body {
     border-radius: 50px;
     border: 4px dashed rgb(246, 111, 179); 
     transition: background-color 0.3s linear, color 0.3s linear;
+    position: relative;
+    z-index: 10;
 }
 #todo-container.dark {
     background-color: rgb(111, 33, 72);
@@ -122,4 +125,18 @@ body {
   border: 4px dashed #888;
   color: white;
   transition: background-color 0.3s, color 0.3s;
+}
+
+.bgimg {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.bgimg.dark {
+  height: 200px;
+  filter: hue-rotate(-10deg) brightness(0.2) saturate(8);
 }
